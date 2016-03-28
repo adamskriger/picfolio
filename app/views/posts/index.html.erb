@@ -1,0 +1,6 @@
+
+
+  <% @posts.each do |post| %>
+      <h2><%= link_to image_tag(post.image.url(:medium)), post_path(post) %></h2><br>
+      <h2> <%= post.caption %> </h2>
+    <% end %>
